@@ -1,5 +1,7 @@
 export default class Person {
-  constructor () {
-    this.ages = new Map();
+  constructor (age) {
+    this.ages = new Map([
+      ['earth', age]
+    ]);
   }
 }
