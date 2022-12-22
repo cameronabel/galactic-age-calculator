@@ -17,5 +17,9 @@ describe('Person', () => {
     const person = new Person(25);
     expect(person.ages.get('Venus')).toEqual(40);
   });
+  test('The person.ages Map should initialize with the Mars age based upon the input Earth age.', () => {
+    const person = new Person(25);
+    expect(person.ages.get('Mars')).toEqual(13);
+  });
 });
 
