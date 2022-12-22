@@ -17,7 +17,13 @@ export default class Person {
     ]);
   }
   ageDifference (other) {
-    return new Map();
+    return new Map([
+      ['Mercury', other.ages.get('Mercury') - this.ages.get('Mercury')],
+      ['Venus', other.ages.get('Venus') - this.ages.get('Venus')],
+      ['Earth', other.ages.get('Earth') - this.ages.get('Earth')],
+      ['Mars', other.ages.get('Mars') - this.ages.get('Mars')],
+      ['Jupiter', other.ages.get('Jupiter') - this.ages.get('Jupiter')]
+    ]);
   }
 
 }
