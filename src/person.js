@@ -1,7 +1,7 @@
 export default class Person {
   constructor (age) {
     this.ages = new Map([
-      ['earth', age]
+      ['Earth', age]
     ]);
   }
 }
