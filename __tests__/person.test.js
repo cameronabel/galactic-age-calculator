@@ -27,3 +27,11 @@ describe('Person', () => {
   });
 });
 
+describe('Person.ageDifference', () => {
+  test('When passed an age in the future, it should return a Map object.', () => {
+    const person1 = new Person(25);
+    const person2 = new Person(30);
+    expect(person1.ageDifference(person2)).toBeInstanceOf(Map);
+  })
+});
+
