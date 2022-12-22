@@ -18,4 +18,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
         inject: 'body'
       })
     ],
+    devServer: {
+      contentBase: './dist'
+        }
 	};
