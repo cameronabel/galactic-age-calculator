@@ -1,0 +1,24 @@
+{
+  "name": "galactic-age-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameronabel/galactic-age-calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cameronabel/galactic-age-calculator/issues"
+  },
+  "homepage": "https://github.com/cameronabel/galactic-age-calculator#readme",
+  "devDependencies": {
+    "webpack": "4.46.0"
+  }
+}
