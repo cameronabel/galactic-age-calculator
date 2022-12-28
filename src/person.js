@@ -5,7 +5,6 @@ const multipliers = {
   jupiter: 11.86
 }
 
-
 export default class Person {
   constructor (age) {
     this.ages = new Map([
@@ -25,5 +24,4 @@ export default class Person {
       ['Jupiter', other.ages.get('Jupiter') - this.ages.get('Jupiter')]
     ]);
   }
-
 }

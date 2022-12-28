@@ -1,6 +1,8 @@
 import './css/styles.css';
 import Person from './person';
 
+localStorage.planet = 'earth';
+
 function compareAges(e, person){
   e.preventDefault()
   const targetAge = document.getElementById('target-age').value;
@@ -9,6 +11,10 @@ function compareAges(e, person){
   document.getElementById('second-age-label').innerHTML = `Your target age on Earth: ${targetPerson.ages.get('Earth')}<br>`
   const ageMap = person.ageDifference(targetPerson);
   fillTimeDeltas(ageMap);
+  document.getElementById('right-chev').addEventListener('click', nextPlanet);
+  document.getElementById('left-chev').addEventListener('click', prevPlanet);
+  document.getElementById('right-chev').classList.remove('dim');
+  document.getElementById('left-chev').classList.remove('dim');
 }
 
 function fillTimeDeltas() {}
@@ -24,4 +30,19 @@ document.getElementById('person-info').addEventListener('submit', e => {
   document.getElementById('second-age-form').addEventListener('submit', (e) => {
     compareAges(e, person);
   });
+  document.getElementById('target-age').focus();
 });
+
+function nextPlanet() {
+  console.log('next planet');
+  document.getElementById('earth').classList.add('hidden');
+  switch (localStorage.planet) {
+    case 'earth':
+      document.getElementById('mars').classList.remove('hidden');
+      document.getElementById('arrow').classList.add('hidden');
+  }
+}
+
+function prevPlanet() {}
+
+document.getElementById('right-chev').addEventListener('click', nextPlanet);
