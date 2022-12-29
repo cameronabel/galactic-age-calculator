@@ -33,6 +33,12 @@ Once active, enter your age and a target age (both in Earth years). Click throug
 
 - Planet swap code is a little wet, but functional
 
+## Image Credits
+
+Planets: [macrovector on Freepik](https://www.freepik.com/free-vector/universe-cosmic-celestial-bodies-mars-venus-planets-sun-educational-aid-poster-black-background_4005075.htm#query=planets&position=3&from_view=search&track=sph)
+
+Space: [upklyak on Freepik](https://www.freepik.com/free-vector/abstract-space-galaxy-view-with-blue-pink-cloud_34736053.htm)
+
 ## License
 
 [MIT](https://opensource.org/licenses/MIT)
