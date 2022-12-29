@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Galactic Ages</title>
+</head>
+<body>
+  <div class="column left">
+    <div id="form-area">
+      <h1>Intergalactic Calculator</h1>
+      <p><a href="https://www.youtube.com/watch?v=qORYO0atB6g" target="_blank">(calculator intergalatic)</a></p>
+      <br>
+      <form id="person-info">
+        <label id="age-label" for="person-age">Enter your age: <input id='age' type="number" min="1" step="1" required></label>
+        <br>
+        <button id='age-btn' class="btn">SUBMIT</button>
+      </form>
+      <h2 id="tdh2" class="hidden">Calculate Time Delta</h2>
+      <form id="second-age-form" class="hidden">
+        <label id='second-age-label' for="second-age">Enter a target age: <input id='target-age' type="number" min="1" step="1" required></label>
+        <br>
+        <button id='target-age-btn' class="btn">SUBMIT</button>
+      </form>
+      <span id="Earth-info"></span>
+    </div>
+  </div>
+
+  <div class="column right">
+    <div id="info-box">
+      <img id="arrow" class="" src="assets/images/arrow.png">
+    </div>
+    <div id="planet-box">
+      <div class="thin-sub-col thin-left">
+        <img id="left-chev" class="chevron dim" src="assets/images/chevron.png">
+      </div>
+      <div id="planet-area">
+        <img id="Mercury" class="planet hidden" src="assets/images/mercury.png">
+        <img id="Venus" class="planet hidden" src="assets/images/venus.png">
+        <img id="Earth" class="planet" src="assets/images/earth.png">
+        <img id="Mars" class="planet hidden" src="assets/images/mars.png">
+        <img id="Jupiter" class="planet hidden" src="assets/images/jupiter.png">
+      </div>
+      <div class="thin-sub-col thin-right">
+        <img id="right-chev" class="chevron dim" src="assets/images/chevron.png">
+      </div>
+    </div>
+  </div>
+<script src="bundle.js"></script></body>
+</html>
