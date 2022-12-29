@@ -31,7 +31,7 @@ function fillTimeDeltas(person, targetPerson) {
     if (ageDiff >= 0) {
       p2.append(`${Math.round(ageDiff)} ${planet} years have yet to pass.`);
     } else {
-      p2.append(`${Math.round(ageDiff)} ${planet} years have passed.`);
+      p2.append(`${Math.abs(Math.round(ageDiff))} ${planet} years have passed.`);
     }
     
     div.append(p2);
