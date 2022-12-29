@@ -3,7 +3,7 @@ const multipliers = {
   venus: 0.62,
   mars: 1.88,
   jupiter: 11.86
-}
+};
 
 export default class Person {
   constructor (age) {
