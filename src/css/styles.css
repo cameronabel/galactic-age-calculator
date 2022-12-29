@@ -177,7 +177,7 @@ input {
 
 .planet {
   animation: rotate 40s infinite linear;
-  width:60%;
+  width:70%;
   max-width: 389px;
   max-height: 389px;
   margin: auto;

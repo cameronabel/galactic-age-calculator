@@ -34,15 +34,21 @@ document.getElementById('person-info').addEventListener('submit', e => {
 });
 
 function nextPlanet() {
-  console.log('next planet');
-  document.getElementById('earth').classList.add('hidden');
+  document.getElementById(localStorage.planet).classList.add('hidden');
   switch (localStorage.planet) {
     case 'earth':
       document.getElementById('mars').classList.remove('hidden');
       document.getElementById('arrow').classList.add('hidden');
+      localStorage.planet = 'mars';
   }
 }
 
-function prevPlanet() {}
-
-document.getElementById('right-chev').addEventListener('click', nextPlanet);
+function prevPlanet() {
+  document.getElementById(localStorage.planet).classList.add('hidden');
+  switch (localStorage.planet) {
+    case 'mars':
+      document.getElementById('earth').classList.remove('hidden');
+      document.getElementById('arrow').classList.remove('hidden');
+      localStorage.planet = 'earth';
+  }
+}
